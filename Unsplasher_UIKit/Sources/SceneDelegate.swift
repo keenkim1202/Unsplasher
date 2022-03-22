@@ -34,8 +34,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     tabBarController.tabBar.barTintColor = .black
 
     window!.rootViewController = tabBarController
-    
-    // window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
     window?.makeKeyAndVisible()
   }
 

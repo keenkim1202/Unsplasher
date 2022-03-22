@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
   }
 
 }
+
 extension HomeViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dummyData.count
@@ -57,7 +58,6 @@ extension HomeViewController: UITableViewDelegate {
     let image = UIImage(named: dummyData[indexPath.row])!
     let ratio = image.getImageRatio()
     return tableView.frame.width / ratio
-    
   }
 }
 

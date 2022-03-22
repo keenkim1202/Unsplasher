@@ -8,6 +8,7 @@
 import UIKit
 
 class SearchView: UIView, ViewRepresentable {
+  
   // MARK: - Init
   override init(frame: CGRect) {
     super.init(frame: frame)

@@ -64,14 +64,12 @@ class HomeTableViewCell: UITableViewCell, ViewRepresentable {
       userNameLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
       userNameLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor,constant: -16),
       userNameLabel.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -16),
-      // userNameLabel.heightAnchor.constraint(equalToConstant: 25)
     ])
     
     NSLayoutConstraint.activate([
       descriptionLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
       descriptionLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor,constant: -16),
       descriptionLabel.bottomAnchor.constraint(equalTo: userNameLabel.topAnchor),
-      // descriptionLabel.heightAnchor.constraint(equalToConstant: 25)
     ])
   }
   
