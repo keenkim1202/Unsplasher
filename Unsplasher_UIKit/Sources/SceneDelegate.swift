@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     let tabBarController = UITabBarController()
     let homeVC = UINavigationController(rootViewController: HomeViewController())
-    let searchVC = UINavigationController(rootViewController: SearchViewController())
+    let searchVC = SearchViewController()
     
     let homeItem = UITabBarItem()
     homeItem.image = UIImage(systemName: "photo.fill")

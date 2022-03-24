@@ -12,6 +12,7 @@
 		1C36A91027E9B5850091668D /* UIImage++Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C36A90F27E9B5850091668D /* UIImage++Extension.swift */; };
 		1C36A91227E9B8B10091668D /* UIColor++Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C36A91127E9B8B10091668D /* UIColor++Extension.swift */; };
 		1C36A91527E9BD650091668D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C36A91427E9BD650091668D /* SearchView.swift */; };
+		1C66DB2627EC6BBB001618A8 /* Unsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66DB2527EC6BBB001618A8 /* Unsplash.swift */; };
 		1CBBC75127E8C4CE00646FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBC75027E8C4CE00646FC1 /* AppDelegate.swift */; };
 		1CBBC75327E8C4CE00646FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBC75227E8C4CE00646FC1 /* SceneDelegate.swift */; };
 		1CBBC75527E8C4CE00646FC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBC75427E8C4CE00646FC1 /* HomeViewController.swift */; };
@@ -19,6 +20,8 @@
 		1CBBC75D27E8C4D100646FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CBBC75B27E8C4D100646FC1 /* LaunchScreen.storyboard */; };
 		1CBBC76B27E8D33F00646FC1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBC76A27E8D33F00646FC1 /* HomeView.swift */; };
 		1CBBC76E27E8D38B00646FC1 /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBBC76D27E8D38B00646FC1 /* ViewRepresentable.swift */; };
+		1CFB882027EC56040086A4CD /* CHTCollectionViewWaterfallLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 1CFB881F27EC56040086A4CD /* CHTCollectionViewWaterfallLayout */; };
+		1CFB882227EC565F0086A4CD /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFB882127EC565F0086A4CD /* ResultCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,7 @@
 		1C36A90F27E9B5850091668D /* UIImage++Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage++Extension.swift"; sourceTree = "<group>"; };
 		1C36A91127E9B8B10091668D /* UIColor++Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++Extension.swift"; sourceTree = "<group>"; };
 		1C36A91427E9BD650091668D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1C66DB2527EC6BBB001618A8 /* Unsplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unsplash.swift; sourceTree = "<group>"; };
 		1CBBC74D27E8C4CE00646FC1 /* Unsplasher_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unsplasher_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CBBC75027E8C4CE00646FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CBBC75227E8C4CE00646FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 		1CBBC75E27E8C4D100646FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CBBC76A27E8D33F00646FC1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1CBBC76D27E8D38B00646FC1 /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		1CFB882127EC565F0086A4CD /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFB882027EC56040086A4CD /* CHTCollectionViewWaterfallLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 			children = (
 				1C36A90C27E9A1F60091668D /* SearchViewController.swift */,
 				1C36A91427E9BD650091668D /* SearchView.swift */,
+				1CFB882127EC565F0086A4CD /* ResultCollectionViewCell.swift */,
 			);
 			path = SearchTab;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 				1CBBC76D27E8D38B00646FC1 /* ViewRepresentable.swift */,
 				1CBBC76C27E8D35400646FC1 /* HomeTab */,
 				1C36A91327E9BD4D0091668D /* SearchTab */,
+				1C66DB2527EC6BBB001618A8 /* Unsplash.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 			);
 			name = Unsplasher_UIKit;
 			packageProductDependencies = (
+				1CFB881F27EC56040086A4CD /* CHTCollectionViewWaterfallLayout */,
 			);
 			productName = Unsplasher_UIKit;
 			productReference = 1CBBC74D27E8C4CE00646FC1 /* Unsplasher_UIKit.app */;
@@ -180,6 +189,7 @@
 			);
 			mainGroup = 1CBBC74427E8C4CE00646FC1;
 			packageReferences = (
+				1CFB881E27EC56040086A4CD /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */,
 			);
 			productRefGroup = 1CBBC74E27E8C4CE00646FC1 /* Products */;
 			projectDirPath = "";
@@ -210,11 +220,13 @@
 				1C36A91527E9BD650091668D /* SearchView.swift in Sources */,
 				1C36A90B27E9998E0091668D /* HomeTableViewCell.swift in Sources */,
 				1C36A90D27E9A1F60091668D /* SearchViewController.swift in Sources */,
+				1C66DB2627EC6BBB001618A8 /* Unsplash.swift in Sources */,
 				1CBBC75527E8C4CE00646FC1 /* HomeViewController.swift in Sources */,
 				1CBBC76B27E8D33F00646FC1 /* HomeView.swift in Sources */,
 				1C36A91227E9B8B10091668D /* UIColor++Extension.swift in Sources */,
 				1CBBC75127E8C4CE00646FC1 /* AppDelegate.swift in Sources */,
 				1CBBC75327E8C4CE00646FC1 /* SceneDelegate.swift in Sources */,
+				1CFB882227EC565F0086A4CD /* ResultCollectionViewCell.swift in Sources */,
 				1CBBC76E27E8D38B00646FC1 /* ViewRepresentable.swift in Sources */,
 				1C36A91027E9B5850091668D /* UIImage++Extension.swift in Sources */,
 			);
@@ -426,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CFB881E27EC56040086A4CD /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chiahsien/CHTCollectionViewWaterfallLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CFB881F27EC56040086A4CD /* CHTCollectionViewWaterfallLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CFB881E27EC56040086A4CD /* XCRemoteSwiftPackageReference "CHTCollectionViewWaterfallLayout" */;
+			productName = CHTCollectionViewWaterfallLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CBBC74527E8C4CE00646FC1 /* Project object */;
 }

@@ -7,10 +7,11 @@
 
 import UIKit
 
+// editorial doc : https://unsplash.com/documentation#list-photos
 class HomeViewController: UIViewController {
 
   let homeView = HomeView()
-  let dummyData: [String] = ["image1", "image2", "image3", "image4"]
+  let dummyData: [String] = ["image1", "image2", "image3", "image4", "image1", "image2", "image3", "image4"]
   
   override func loadView() {
     super.loadView()
@@ -31,6 +32,7 @@ class HomeViewController: UIViewController {
 
 }
 
+// MARK: Extension - UITableViewDataSource & UITableViewDelegate
 extension HomeViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dummyData.count
