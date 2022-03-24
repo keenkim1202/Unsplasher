@@ -10,3 +10,15 @@
 - [ ] Search 화면 UI 구현
 
 (*추가 작성 예정...)
+
+## Issue
+<details> 
+  <summary> 3/24 </summary>
+  
+> 이슈
+- searchView : searchBar, descoverLabel 이 안보이고, colletionView만 보임
+
+> 해결
+- 제약 조건 설정이 잘못 되었나 살펴보는 중
+    
+</details>
