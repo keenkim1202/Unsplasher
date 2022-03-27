@@ -18,7 +18,9 @@ class HomeView: UIView, ViewRepresentable {
   // MARK: - Init
   override init(frame: CGRect) {
     super.init(frame: frame)
-    self.backgroundColor = .darkGray
+    self.backgroundColor = .mainBlack
+    tableView.backgroundColor = .mainBlack
+    
     createViews()
     setConstraints()
   }

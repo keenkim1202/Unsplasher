@@ -21,7 +21,8 @@ class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationItem.title = "Unsplasher"
-    
+    self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
     homeView.tableView.rowHeight = UITableView.automaticDimension
     homeView.tableView.estimatedRowHeight = 50
     
