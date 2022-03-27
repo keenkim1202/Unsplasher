@@ -47,6 +47,8 @@ extension SearchViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ResultCollectionViewCell.identifier, for: indexPath) as? ResultCollectionViewCell else { return UICollectionViewCell() }
     cell.configure(image: UIImage(named: dummyData[indexPath.item])!)
+    cell.nameLabel.text = "username"
+    
     return cell
   }
 }

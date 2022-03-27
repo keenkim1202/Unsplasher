@@ -18,10 +18,18 @@ class ResultCollectionViewCell: UICollectionViewCell, ViewRepresentable {
     return i
   }()
   
+  let nameLabel: UILabel = {
+    let l = UILabel()
+    l.textColor = .white
+    l.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
+    return l
+  }()
+  
   // MARK: - Init
   override init(frame: CGRect) {
     super.init(frame: frame)
     imageView.translatesAutoresizingMaskIntoConstraints = false
+    nameLabel.translatesAutoresizingMaskIntoConstraints = false
     
     createViews()
     setConstraints()
@@ -44,15 +52,24 @@ class ResultCollectionViewCell: UICollectionViewCell, ViewRepresentable {
   // MARK: - Configure
   func createViews() {
     contentView.addSubview(imageView)
+    contentView.addSubview(nameLabel)
     contentView.clipsToBounds = true
   }
   
   func setConstraints() {
+    let safeArea = contentView.safeAreaLayoutGuide
+
     NSLayoutConstraint.activate([
       imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
       imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
       imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
       imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+    ])
+    
+    NSLayoutConstraint.activate([
+      nameLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 10),
+      nameLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -10),
+      nameLabel.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -10)
     ])
   }
   

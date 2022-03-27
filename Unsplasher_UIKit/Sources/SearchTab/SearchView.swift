@@ -17,7 +17,8 @@ class SearchView: UIView, ViewRepresentable {
     s.barTintColor = .mainBlack
     s.searchBarStyle = .minimal
     s.searchTextField.backgroundColor = .mainGray
-    s.searchTextField.textColor = .white
+    s.searchTextField.textColor = .lightGray
+    s.searchTextField.leftView?.tintColor = .lightGray
     return s
   }()
   
