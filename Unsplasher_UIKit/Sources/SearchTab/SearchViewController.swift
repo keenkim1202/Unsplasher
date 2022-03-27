@@ -27,10 +27,10 @@ class SearchViewController: UIViewController {
     searchView.collectionView.dataSource = self
   }
   
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    // searchView.collectionView.frame = view.bounds
-  }
+  // override func viewDidLayoutSubviews() {
+  //   super.viewDidLayoutSubviews()
+  //   // searchView.collectionView.frame = view.bounds
+  // }
   
 }
 
@@ -43,7 +43,7 @@ extension SearchViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return dummyData.count
   }
-  
+
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ResultCollectionViewCell.identifier, for: indexPath) as? ResultCollectionViewCell else { return UICollectionViewCell() }
     cell.configure(image: UIImage(named: dummyData[indexPath.item])!)
