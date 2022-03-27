@@ -6,8 +6,14 @@
 - MVC 패턴을 적용하였습니다.
 
 ## 진행 상황
-- [x] Home 화면 UI 구현
-- [ ] Search 화면 UI 구현
+- [ ] Home 화면 UI 구현
+  - [x] Editorial 이미지를 보여줄 UI 구현
+  - [x] tableView 설정
+  - [ ] 네비게이션바 아래의 메뉴 UI 구현
+  - [ ] custom color 적용
+- [x] Search 화면 UI 구현
+  - [x] collectionView 설정
+  - [x] custom color 적용
 
 (*추가 작성 예정...)
 
@@ -19,6 +25,10 @@
 - searchView : searchBar, descoverLabel 이 안보이고, colletionView만 보임
 
 > 해결
-- 제약 조건 설정이 잘못 되었나 살펴보는 중
+  ```swift
+  searchBar.translatesAutoresizingMaskIntoConstraints = false
+  discoverLabel.translatesAutoresizingMaskIntoConstraints = false
+  ```
+- `translatesAutoresizingMaskIntoConstraints` 설정을 안해줬었음
     
 </details>
