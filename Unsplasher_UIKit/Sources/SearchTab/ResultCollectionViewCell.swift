@@ -21,6 +21,8 @@ class ResultCollectionViewCell: UICollectionViewCell, ViewRepresentable {
   // MARK: - Init
   override init(frame: CGRect) {
     super.init(frame: frame)
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    
     createViews()
     setConstraints()
   }
@@ -47,10 +49,10 @@ class ResultCollectionViewCell: UICollectionViewCell, ViewRepresentable {
   
   func setConstraints() {
     NSLayoutConstraint.activate([
-      imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-      imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-      imageView.topAnchor.constraint(equalTo: self.topAnchor),
-      imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+      imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+      imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+      imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+      imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
     ])
   }
   

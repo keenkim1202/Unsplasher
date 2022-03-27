@@ -13,6 +13,7 @@ class SearchView: UIView, ViewRepresentable {
   
   let searchBar: UISearchBar = {
     let s = UISearchBar()
+    s.placeholder = "Search photos, collections, users"
     s.barTintColor = .mainBlack
     s.searchBarStyle = .minimal
     s.searchTextField.backgroundColor = .mainGray
